@@ -9,18 +9,19 @@
     <title>Learning Coding?</title>
   </head>
   <body>
-    <div class="container">
-      <header class="page-header text-center well well-lg">
+    <div class="container-fluid">
+
+      <header class="page-header header-bg text-center well">
         <div class="media">
-          <img class="media object" src="" alt="picture of a person coding" />
+          <img class="media object img-rounded img-responsive" src="img/blue.jpg" alt="picture of a person coding" />
         </div>
-      <h1>Learning Coding? <br> <small class="text-muted">Here's where you should start</small></h1>
+      <h1>Learning to Code? <br> <small class="text-muted">Here's where you should start</small></h1>
       </header>
 
       <!-- ADD ENTER NAME TO BEGIN, W SUBMIT BUTTON -->
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 pull-left">
           <form id="quiz">
             <h4 class="page-header">Would you prefer to work at a start-up, or a larger, more established company?</h4>
             <div class="radio">
@@ -62,7 +63,7 @@
               </label>
             </div>
 
-            <h4 class="page-header">Imagine that you are part of a team that is rebuilding a heavy content, high traffic site.<br> What do you choose to focus on? </h4>
+            <h4 class="page-header">Imagine that you are part of a team that is rebuilding a heavy content site, that attracts high traffic site.<br> What do you choose to focus on? </h4>
             <div class="radio">
               <label>
                 <input type="radio" name="question3" value="design" checked>
@@ -117,17 +118,24 @@
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="question5" value="none" >
+                <input class="pad-under" type="radio" name="question5" value="none" >
                 I don't have a preference.
               </label>
             </div>
             <button type="submit" class="btn btn-info">Results!</button>
           </form>
+        </div>
+        <div class="col-sm-4 pull-right">
+          <h4 class="page-header">
+            Results!
+          </h4>
 
+          <h7 id="hidden">You would enjoy the <span class="track"></span> track at Epicodus!</h7>
 
         </div>
-      </div>
 
+
+      </div>
     </div>
   </body>
 </html>

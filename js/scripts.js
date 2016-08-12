@@ -3,6 +3,7 @@ var csharp = 0;
 var jav = 0;
 var ruby = 0;
 var design = 0;
+var course = "";
 
 $( document ).ready(function() {
   $("#quiz").submit(function(event) {
@@ -29,6 +30,24 @@ $( document ).ready(function() {
     var q5 = $("input:radio[name=question5]:checked").val();
     if ( q5 === "design" ) { design ++; }
       else if (q5 === "backend") { csharp ++; jav ++; }
+
+    if ( jav > design &&
+          jav > csharp &&
+          jav > ruby) {
+          result = "Java and Android";
+    } else if ( csharp > design &&
+          csharp > jav &&
+          csharp > ruby) {
+          result = "C# and .NET";
+    } else if ( ruby > design &&
+          ruby > csharp &&
+          ruby > jav) {
+          result = "Ruby and Ruby on Rails";
+    } else { result = "Design and CSS"; }
+
+    $("h7").show();
+    $(".track").text(result);
+
 
   console.log("user selected: " + q1);
   console.log("c#: " + csharp);
