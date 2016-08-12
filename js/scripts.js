@@ -5,6 +5,7 @@ var ruby = 0;
 var design = 0;
 var course = "";
 
+//Front-end Logic
 $( document ).ready(function() {
   $(".fadetext").fadeIn(2500)
   $("#quiz").submit(function(event) {
@@ -47,7 +48,7 @@ $( document ).ready(function() {
           result = "Ruby and Ruby on Rails";
     } else { result = "Design and CSS"; }
 
-    $("h7").show();
+    $("#hidden").show();
     $(".track").text(result);
 
 
