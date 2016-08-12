@@ -9,20 +9,18 @@
     <title>Learning Coding?</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
 
       <header class="page-header header-bg text-center well">
-        <div class="media">
-          <img class="media object img-rounded img-responsive" src="img/blue.jpg" alt="picture of a person coding" />
-        </div>
-      <h1>Learning to Code? <br> <small class="text-muted">Here's where you should start</small></h1>
+
+      <h1>Learning to Code? <br> <span class="fadetext" style="color:#4EF0F2"><small style="color:#4EF0F2">Here's where you should start</small></span></h1>
       </header>
 
       <!-- ADD ENTER NAME TO BEGIN, W SUBMIT BUTTON -->
 
-      <div class="row">
-        <div class="col-md-6 pull-left">
-          <form id="quiz">
+      <div class="row whitespace-below">
+        <div class="col-sm-offset-1 col-md-6">
+          <form id="quiz" class="whitespace-below">
             <h4 class="page-header">Would you prefer to work at a start-up, or a larger, more established company?</h4>
             <div class="radio">
               <label>
@@ -125,9 +123,9 @@
             <button type="submit" class="btn btn-info">Results!</button>
           </form>
         </div>
-        <div class="col-sm-4 pull-right">
+        <div class="col sm-offset1 col-sm-4 result">
           <h4 class="page-header">
-            Results!
+            <span class="fadetext" style="color:#ff0000">Results!</span>
           </h4>
 
           <h7 id="hidden">You would enjoy the <span class="track"></span> track at Epicodus!</h7>

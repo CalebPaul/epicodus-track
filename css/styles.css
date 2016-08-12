@@ -1,5 +1,6 @@
 .container {
-  width: 80%;
+  width: 85%;
+  border: 1px solid;
 }
 
 .header-bg {
@@ -9,14 +10,39 @@
   background-size: cover;
 }
 
-.header-bg img {
+.well {
+  position: relative;
+  background: #000 url("https://s3.amazonaws.com/videoblocks-content/video/thumbnail/HPOKFbR/abstract-animated-computer-script-programming-code-as-technology-background-1920x1080-full-hd-footage_qktlwvii__M0000.jpg") center center;
   width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.result {
+  border: 1px solid;
+  border-color: #999999;
+  border-radius: 4px;
+  padding-bottom: 10em;
+}
+
+.fadetext {
+  display: none;
 }
 
 #hidden {
   display: none;
 }
 
+h1 {
+  color: red;
+}
+
 h4 {
   padding-top: 1px;
+}
+
+body {
+  padding-bottom: 20px;
+  margin-bottom: 5px;
 }

@@ -6,7 +6,9 @@ var design = 0;
 var course = "";
 
 $( document ).ready(function() {
+  $(".fadetext").fadeIn(2500)
   $("#quiz").submit(function(event) {
+
 
     var q1 = $("input:radio[name=question1]:checked").val();
     if ( q1 === "bigbiz" ) { csharp ++; jav ++; }
