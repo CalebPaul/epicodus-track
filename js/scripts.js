@@ -9,16 +9,16 @@ $( document ).ready(function() {
   $("#quiz").submit(function(event) {
 
     var q1 = $("input:radio[name=question1]:checked").val();
+    if ( q1 === "bigbiz" ) { csharp ++; jav ++; }
+      else if (q1 === "mobile" ) { jav ++; }
+      else if (q1 === "rails") { ruby ++; }
 
-    if ( q1 === "bigbiz" ) {
-      csharp ++;
-      jav ++;
-    } else if (q1 === "startup" ) {
-      ruby ++;
-      design ++;
-    } else if (q1 === "none") {}
+    var q2 = $("input:radio[name=question2]:checked").val();
+    if ( q2 === "design" ) { design ++; }
+      else if (q2 === "mobile" ) { jav ++; }
+      else if (q2 === "rails") { ruby ++; }
 
-//  alert("clicktest");
+
   console.log("user selected: " + q1);
   console.log("c#: " + csharp);
   console.log("java: " + jav);
